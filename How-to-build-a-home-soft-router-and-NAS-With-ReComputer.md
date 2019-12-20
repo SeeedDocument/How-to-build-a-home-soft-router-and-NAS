@@ -11,15 +11,12 @@
 - Grove - OLED Display 0.96"，ReComputer主板上有一颗Arduino微控制器，不要放过耍酷的好机会
 - 一些线材，比如SATA数据线、SSD供电线、风扇供电线、Grove连接线等，有些线材需要动手改造，不过很简单
 
- ![](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/10.jpg)
+ ![](/Users/Jack/Documents/Seeed/ReComputer/10.jpg)
 
- ![](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/11.jpg)
+ ![](/Users/Jack/Documents/Seeed/ReComputer/11.jpg)
 
- ![](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/12.jpg)
+ ![](/Users/Jack/Documents/Seeed/ReComputer/12.jpg)
 
-
-
-10.jpg
 
 
 **机壳**
@@ -34,7 +31,7 @@
 
 在制作线材时，请留意HDD_PWR接口的针脚定义。散热风扇可以从HDD_PWR接口中取用12V电源。
 
-![](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/13.jpg)
+![](/Users/Jack/Documents/Seeed/ReComputer/13.jpg)
 
 
 
@@ -42,23 +39,23 @@
 
 第1步，先将Grove - OLED Display 0.96"安装到机壳上
 
-![](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/20.jpg)
+![](/Users/Jack/Documents/Seeed/ReComputer/20.jpg)
 
-![](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/21.jpg)
+![](/Users/Jack/Documents/Seeed/ReComputer/21.jpg)
 
 
 
 第2步，将散热风扇安装到机壳上
 
-![](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/22.jpg)
+![](/Users/Jack/Documents/Seeed/ReComputer/22.jpg)
 
 
 
 第3步，将2.5‘’ SSD安装到机壳上
 
-![](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/23.jpg)
+![](/Users/Jack/Documents/Seeed/ReComputer/23.jpg)
 
-![](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/24.jpg)
+![](/Users/Jack/Documents/Seeed/ReComputer/24.jpg)
 
 
 
@@ -66,29 +63,29 @@
 
 4PIN散热风扇的接口如下图所示，它有转速检测脚TACH和转速控制脚PWM，我们分别将它们连接到Arduino的12和13脚（这取决于Arduino程序中的定义）。
 
-![](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/25fan_pinout.png)
+![](/Users/Jack/Documents/Seeed/ReComputer/25fan_pinout.png)
 
-![](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/25.jpg)
+![](/Users/Jack/Documents/Seeed/ReComputer/25.jpg)
 
 
 
 将Grove - OLED Display 0.96"连接到I2C，同时接通电源和地线。
 
-![](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/26.jpg)
+![](/Users/Jack/Documents/Seeed/ReComputer/26.jpg)
 
 
 
 将SAMD21的串口与Intel CPU的串口相连。
 
-![](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/25uart.jpg)
+![](/Users/Jack/Documents/Seeed/ReComputer/25uart.jpg)
 
 
 
 第5步，将机壳侧面与前后盖板组装，并旋紧螺钉。
 
-![](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/27.jpg)
+![](/Users/Jack/Documents/Seeed/ReComputer/27.jpg)
 
-![](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/28.jpg)
+![](/Users/Jack/Documents/Seeed/ReComputer/28.jpg)
 
 
 
@@ -96,7 +93,7 @@
 
 风扇吸入的冷风依次流过CPU散热鳍片和SSD硬盘，有效地为大容量SSD散热。
 
-![](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/29.jpg)
+![](/Users/Jack/Documents/Seeed/ReComputer/29.jpg)
 
 
 
@@ -114,7 +111,7 @@ PVE的安装过程非常简单，但有一点非常重要的需要提醒：
 
 这是因为PVE团队认为eMMC不如SSD寿命长，他们不允许PVE安装在eMMC媒体上。
 
-![](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/pve-grub-menu.png)
+![](/Users/Jack/Documents/Seeed/ReComputer/pve-grub-menu.png)
 
 （图片下载自PVE官网，笔者安装的是6.0版）
 
@@ -143,11 +140,11 @@ ReComputer有2个网口，任意选择一个作为PVE的管理网口（另外一
 
 我们要做的是用Arduino IDE打开这个程序，选择Seeeduino Cortex-M0+编译，然后通过编译日志找到bin文件。
 
-![image-20191112210126228](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/401.png)
+![image-20191112210126228](/Users/Jack/Documents/Seeed/ReComputer/401.png)
 
 
 
-![image-20191112210342437](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/402.png)
+![image-20191112210342437](/Users/Jack/Documents/Seeed/ReComputer/402.png)
 
 
 
@@ -176,7 +173,7 @@ chmod a+x /usr/bin/bossac
 
 令Arduino进入bootloader模式，需要短接Reset与Gnd两次
 
-![image-20191113230804316](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/resetArduino.png)
+![image-20191113230804316](/Users/Jack/Documents/Seeed/ReComputer/resetArduino.png)
 
 通过bossac工具烧写Arduino程序
 
@@ -186,7 +183,7 @@ bossac -i -d --port=/dev/ttyACM0 -U true -e -w -v ReComputer.ino.bin -R
 
 此时，您将看到OLED显示屏上出现这样的画面
 
-![](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/oled_gui.jpg)
+![](/Users/Jack/Documents/Seeed/ReComputer/oled_gui.jpg)
 
 
 
@@ -208,7 +205,7 @@ ReComputer主板拥有两个千兆网口，这使它能够很容易地构建软�
 
 我们来构思一下网络拓扑图。
 
-![image-20191116233322566](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/500networkArch.png)
+![image-20191116233322566](/Users/Jack/Documents/Seeed/ReComputer/500networkArch.png)
 
 第1步，下载安装镜像
 
@@ -236,15 +233,15 @@ qemu-img convert -f raw -O qcow2 lede-xxxxxxx-combined-ext4.img vm-100-disk-1.qc
 
 创建WAN网口，重启PVE以使添加的WAN可用。
 
-![image-20191117161646454](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/503createWanBridge.png)
+![image-20191117161646454](/Users/Jack/Documents/Seeed/ReComputer/503createWanBridge.png)
 
-![image-20191117164131776](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/503wanActive.png)
+![image-20191117164131776](/Users/Jack/Documents/Seeed/ReComputer/503wanActive.png)
 
 
 
 创建虚拟机，最后的配置如下图（创建虚拟机Wizard走完后，手动添加第2块网卡，删除硬盘）
 
-![image-20191117161819910](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/504ledeSummary.png)
+![image-20191117161819910](/Users/Jack/Documents/Seeed/ReComputer/504ledeSummary.png)
 
 接下来我们导入lede的磁盘镜像，
 
@@ -274,27 +271,27 @@ root@pve-home:~# qm importdisk 100 openwrt-x86-64-combined-squashfs.qcow2 local-
 
 此时，我们可以在local-lvm下看到我们刚刚导入的磁盘。
 
-![image-20191117163326117](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/505diskImported.png)
+![image-20191117163326117](/Users/Jack/Documents/Seeed/ReComputer/505diskImported.png)
 
 同时，在虚拟机的硬件列表下也可以看到我们导入的磁盘。
 
-![image-20191117163523743](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/506diskImported2.png)
+![image-20191117163523743](/Users/Jack/Documents/Seeed/ReComputer/506diskImported2.png)
 
 双击它，将其添加
 
-![image-20191117163625885](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/507addDisk.png)
+![image-20191117163625885](/Users/Jack/Documents/Seeed/ReComputer/507addDisk.png)
 
 最后的硬件列表像这样：
 
-![image-20191117163718793](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/508finalHardwareSummary.png)
+![image-20191117163718793](/Users/Jack/Documents/Seeed/ReComputer/508finalHardwareSummary.png)
 
 启动虚拟机，打开Console查看kernel log，当打印`random: crng init done`时，敲击回车，看到shell，启动成功。
 
-![image-20191117164609593](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/509ledeBootup.png)
+![image-20191117164609593](/Users/Jack/Documents/Seeed/ReComputer/509ledeBootup.png)
 
 此时，lede的内网IP为192.168.1.1，想要访问此IP，我们需要用电脑直连ReComputer的LAN网口，并将电脑的IP地址配置为静态IP 192.168.1.x。
 
-![image-20191117165532300](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/510configLaptopNetwork.png)
+![image-20191117165532300](/Users/Jack/Documents/Seeed/ReComputer/510configLaptopNetwork.png)
 
 在浏览器中输入地址192.168.1.1，出现OpenWrt的登陆界面，默认用户名root，默认密码password。
 
@@ -316,35 +313,35 @@ https://sourceforge.net/projects/openmediavault/files/5.0.5/openmediavault_5.0.5
 
 第2步，上传安装镜像到PVE
 
-![image-20191114152513579](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/602uploadInstaller.png)
+![image-20191114152513579](/Users/Jack/Documents/Seeed/ReComputer/602uploadInstaller.png)
 
 
 
 第3步，创建PVE虚拟机，最后的配置如下：
 
-![image-20191117110324189](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/603omvConfig.png)
+![image-20191117110324189](/Users/Jack/Documents/Seeed/ReComputer/603omvConfig.png)
 
 
 
 第4步，启动刚刚创建的虚拟机，安装openmediavault，一路确认即可。
 
-![image-20191117110717036](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/604installOMV.png)
+![image-20191117110717036](/Users/Jack/Documents/Seeed/ReComputer/604installOMV.png)
 
-![image-20191117111323934](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/605installOMVDone.png)
+![image-20191117111323934](/Users/Jack/Documents/Seeed/ReComputer/605installOMVDone.png)
 
 安装完后会出现上图界面，此时需要移除虚拟机的CD-ROM中的ISO镜像。
 
-![image-20191117111506366](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/606removeCDROM.png)
+![image-20191117111506366](/Users/Jack/Documents/Seeed/ReComputer/606removeCDROM.png)
 
 移除后回到“Console”，按下回车键使虚拟机重启。
 
-![image-20191117111854853](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/607omvFirstBoot.png)
+![image-20191117111854853](/Users/Jack/Documents/Seeed/ReComputer/607omvFirstBoot.png)
 
 根据屏幕上显示的IP地址，在浏览器中进入此IP地址的网页。然后用默认的用户名和密码登陆，默认用户名admin，默认密码openmediavault。
 
-![image-20191117112155601](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/608loginOMV.png)
+![image-20191117112155601](/Users/Jack/Documents/Seeed/ReComputer/608loginOMV.png)
 
-![image-20191117112400979](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/609omvWebUIFirstView.png)
+![image-20191117112400979](/Users/Jack/Documents/Seeed/ReComputer/609omvWebUIFirstView.png)
 
 到这里基本的openmediavault系统已经安装完成了，接下来我们将要把SSD硬盘直通进来，以提高OMV系统对硬盘的读写效率。
 
@@ -442,13 +439,13 @@ root@pve-home:~# lspci -nn
 
 接下来我们回到PVE的Web GUI，在OMV虚拟机下选择添加新硬件
 
-![image-20191117114829217](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/610pciPassthrough.png)
+![image-20191117114829217](/Users/Jack/Documents/Seeed/ReComputer/610pciPassthrough.png)
 
-![image-20191117155102090](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/611selectPCI.png)
+![image-20191117155102090](/Users/Jack/Documents/Seeed/ReComputer/611selectPCI.png)
 
 添加后，关闭OMV虚拟机，再重新启动，即可发现OMV中识别了我们直通的硬盘。
 
-![image-20191117155433087](https://github.com/SeeedDocument/How-to-build-a-home-soft-router-and-NAS/raw/master/612seeTheNewDisk.png)
+![image-20191117155433087](/Users/Jack/Documents/Seeed/ReComputer/612seeTheNewDisk.png)
 
 接下来就参照openmediavault的文档enjoy吧。
 
